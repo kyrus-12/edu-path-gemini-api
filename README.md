@@ -1,1 +1,0 @@
-# edu-path-gemini-api
