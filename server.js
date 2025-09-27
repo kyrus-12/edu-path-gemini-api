@@ -1,7 +1,7 @@
 // server.js
 import express from 'express';
 import cors from 'cors';
-import 'dotenv/config'; // To load GEMINI_API_KEY from .env file
+import 'dotenv/config'; 
 import { GoogleGenAI } from "@google/genai";
 
 // 1. Initialize Gemini Client
