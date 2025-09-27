@@ -1,7 +1,7 @@
-const express = require('express');
-const cors = require('cors');
-require('dotenv').config(); 
-const { GoogleGenAI } = require("@google/genai");
+import express from 'express';
+import cors from 'cors';
+import 'dotenv/config'; 
+import { GoogleGenAI } from "@google/genai";
 
 // 1. Initialize Gemini Client
 // The GoogleGenAI client automatically looks for the GEMINI_API_KEY environment variable.
