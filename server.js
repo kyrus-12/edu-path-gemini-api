@@ -53,8 +53,8 @@ app.post('/api/chat', async (req, res) => {
 });
 
 // 4. Start Server
-app.listen(port, () => {
-    console.log(`✅ Backend server listening at http://localhost:${port}`);
-    console.log("⚠️ Remember to serve your QUIZ4(0).html file using an HTTP server (e.g., VS Code Live Server or 'http-server') on a different port, such as 8080.");
-});
+const PORT = process.env.PORT || 3000;
 
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Backend server listening at http://0.0.0.0:${PORT}`);
+});
