@@ -16,10 +16,8 @@ const app = express();
 const port = 3000;
 
 // 2. Middleware
-app.use(cors({
-    origin: 'http://localhost:8080' // IMPORTANT: Change this to your frontend's actual URL
-}));
-app.use(express.json()); // To parse JSON bodies
+app.use(cors());
+app.use(express.json());
 
 // 3. Chat Endpoint
 app.post('/api/chat', async (req, res) => {
